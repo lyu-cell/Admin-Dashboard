@@ -8,35 +8,38 @@ body, html {
     box-sizing: border-box;
     height: 100%;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
-
+    grid-template-rows: 1.3fr 5fr;
 }
 
 .header {
-    background-color: white;
+    border-bottom: 5px ridge yellowgreen;
+    background-color: black;
+    color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1.3fr;
     grid-template-rows: 1fr 1fr;
-
+    padding: 10px;
+    align-items: center;
 }
 
 label {
     grid-row: 1 / 2;
-    margin: 15px;
+    margin: 10PX;
     display: grid;
     grid-template-columns: .08fr 1fr;
     align-items: center;
-    gap: 1%;
+    gap: 3%;
+    width: 85%;
+    height: auto;
 }
 
 input {
     border-radius: 40px;
-    border: 1px solid black;
+    border: 1px solid white;
     grid-column: 2 / 3;
-    width: 50%;
-    height: 50%;
+    width: auto;
 
 }
 
@@ -45,13 +48,14 @@ img {
 }
 
 .sidebar {
-    background-color: rgba(38, 190, 255, 0.992);
+    background-color: black;
     color: white;
     font-size: 20px;
     display: grid;
     list-style: none;
     grid-row: 1 / 4;
     grid-column: 1 / 2;
+    border-right: 5px ridge yellowgreen;
 }
 
 ul {
@@ -68,12 +72,12 @@ ul {
 }
 
 .card {
-    border: 1px solid black;
+    border: 5px double greenyellow;
     height: 1fr;
     padding: 10px;
     text-align: center;
-    background-color: white;
-    margin: 12px;
+    background-color: black;
+    color: white;
     margin-top: 30px;
 }
 
@@ -82,7 +86,43 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(50, 1fr));
     gap: 10px;
-    background-color: rgb(228, 228, 228);
+    background-color: black;
     font-size: 13px;
+    padding: 20px;
 }
 
+.feature {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 2 / 3;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    height: 120%;
+    width: 90px;
+    text-align: center;
+    background-color: greenyellow;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.userInfo, .userInfo2 {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoContainer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+img {
+    border: 2px solid yellowgreen;
+}
