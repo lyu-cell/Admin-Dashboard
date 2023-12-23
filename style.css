@@ -26,7 +26,7 @@ body, html {
 
 label {
     grid-row: 1 / 2;
-    margin: 10PX;
+    margin: 19PX;
     display: grid;
     grid-template-columns: .08fr 1fr;
     align-items: center;
@@ -51,11 +51,11 @@ img {
     background-color: black;
     color: white;
     font-size: 20px;
-    display: grid;
     list-style: none;
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     border-right: 5px ridge yellowgreen;
+    padding: 25px;
 }
 
 ul {
@@ -67,10 +67,21 @@ ul {
 .dashboard {
     font-size: 30px;
     display: grid;
-    justify-content: center;
-    height: fit-content;
-    margin-left: -24%;
     font-weight: bolder;
+    margin-bottom: 50%;
+}
+
+.navItemContainer {
+    margin-bottom: 30%;
+    font-size: large;
+    display: grid;
+    gap: 20px;
+}
+
+.navItemContainer2 {
+    display: grid;
+    gap: 20px;
+    font-size: large;
 }
 
 .feature {
